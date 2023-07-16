@@ -1,2 +1,2 @@
 # brainworks-company.github.io
-브레인웍스 깃헙 페이지
+1차적인 사이트 페이지 구성을 위한 저장소입니다.
