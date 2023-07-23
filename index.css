@@ -89,3 +89,21 @@ body {
 .indent1 {
   padding-left: 2em;
 }
+.profiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+.profile_pic {
+  max-width: 6em;
+  display: flex;
+}
