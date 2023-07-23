@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+#topNavBar {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
+
+#topNavBar > h1 {
+  margin: 1em;
+}
+
+#menubar {
+  flex-grow: 1;
+  color: darkslategrey;
+  display: flex;
+  flex-direction: row;
+}
+
+#menubar > li {
+  display: flex;
+  margin: 10px;
+}
+
+#menubar > li:hover {
+  color: yellow;
+}
+
+#menubar > li.selected {
+  font-weight: bold;
+}
+
+#lang {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  color: darkslategrey;
+  margin-right: 20px;
+}
+
+#lang > li {
+  display: flex;
+  margin: 0.5em;
+}
+
+#lang > li.selected {
+  font-weight: bold;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#header > div {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+#content {
+  padding: 2em;
+}
+
+.hl {
+  color: orangered;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.text {
+  color: grey;
+}
+
+.indent1 {
+  padding-left: 2em;
+}
