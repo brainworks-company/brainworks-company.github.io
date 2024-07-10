@@ -14,7 +14,7 @@
     });
 
     $(window).scroll(function() {
-      if ($(".navbar").offset().top > 50) {
+      if ($(".navbar").offset().top > -1) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
           } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -104,7 +104,7 @@
       $('.custom-navbar a, #home a').on('click', function(event) {
         var $anchor = $(this);
           $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
+            scrollTop: $($anchor.attr('href')).offset().top - 74
           }, 1000);
             event.preventDefault();
       });

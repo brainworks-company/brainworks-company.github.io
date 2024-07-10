@@ -38,6 +38,19 @@ body {
   font-weight: bold;
 }
 
+#subMenu {
+  display: none;
+}
+
+td {
+  vertical-align: top;
+  text-align: center;
+}
+
+td > p > a:hover {
+  color: red;
+}
+
 #lang {
   display: flex;
   flex-direction: row;

@@ -1,25 +1,27 @@
+var menuHover = false;
 var submenuHover = false;
 
-function menuOpen(e) {
-  const title = e.dataset.title;
-  var menubar = document.getElementById(`${title}_menu`);
-  if (menubar) {
-    menubar.setAttribute("style", "display: inline-block;");
-  }
+function menuOpen() {
+  menuHover = true;
+  var subMenu = document.getElementById("subMenu");
+  subMenu.setAttribute("style", "display: table-row-group;");
 }
 
-function menuClose(e) {
-  const title = e.dataset.title;
-  var menubar = document.getElementById(`${title}_menu`);
-  if (!submenuHover && menubar) {
-    menubar.setAttribute("style", "display: none;");
-  }
+function menuClose() {
+  menuHover = false;
+  var subMenu = document.getElementById("subMenu");
+  setTimeout(() => {
+    if (!submenuHover && !menuHover) {
+      subMenu.setAttribute("style", "display: none;");
+    }
+  }, 200);
 }
 
 function submenuHovered() {
   submenuHover = true;
 }
 
-function submenuHovered() {
+function submenuLeft() {
   submenuHover = false;
+  menuClose();
 }

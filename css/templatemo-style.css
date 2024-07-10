@@ -226,11 +226,8 @@ section {
   color: #ce3232;
 }
 
-.top-nav-collapse {
-  background: #ffffff;
-}
-
 .navbar-fixed-top {
+  background: #ffffff;
   width: 100%;
 }
 
@@ -271,17 +268,11 @@ section {
 }
 
 .custom-navbar .nav li a:hover {
-  background: transparent;
   color: #ce3232;
 }
 
-.custom-navbar .navbar-nav > li > a:hover,
-.custom-navbar .navbar-nav > li > a:focus {
-  background-color: transparent;
-}
 
 .custom-navbar .nav li.active > a {
-  background-color: transparent;
   color: #ce3232;
 }
 
@@ -290,13 +281,9 @@ section {
   padding-top: 10px;
 }
 
-.custom-navbar .navbar-toggle {
-  background-color: transparent;
-}
 
 .custom-navbar .navbar-toggle .icon-bar {
   background: #252525;
-  border-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -681,6 +668,10 @@ section {
 }
 
 .menu_div p {
+  color: black;
+}
+
+.menu_div a {
   color: black;
 }
 
