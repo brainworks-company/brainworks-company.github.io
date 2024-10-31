@@ -2,13 +2,25 @@
 <html lang="en">
   <head>
     <title>BrainWorks</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("YOUR_USER_ID"); // EmailJS에서 발급한 사용자 ID 입력 필요
+      })();
+    </script>
     <!-- 
 
-Eatery Cafe Template 
+      Eatery Cafe Template 
 
-http://www.templatemo.com/tm-515-eatery
+      http://www.templatemo.com/tm-515-eatery
 
--->
+      -->
+    <!-- ToDos
+      1. EmailJS 회원 가입 후 정보 입력: EmailJS 검색하여 대체
+      2. 563 line부터 <h4> 태그 내 텍스트 량 보이는 수준까지 줄이기
+      3. 563 line부터 <image> 태그 내 이미지 교체: images에 넣을 것
+      4. index.html (한글 버전)에 변경 내역 반영
+    -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="description" content="" />
@@ -67,7 +79,7 @@ http://www.templatemo.com/tm-515-eatery
                     data-title="ai_solution"
                     href="#ai_solution"
                     class="smoothScroll"
-                    >Manufacturing Artificial Intelligence</a
+                    >AI & Big Data</a
                   >
                 </th>
                 <th>
@@ -84,6 +96,14 @@ http://www.templatemo.com/tm-515-eatery
                     href="#education"
                     class="smoothScroll"
                     >Artificial Intelligence Education</a
+                  >
+                </th>
+                <th>
+                  <a
+                    data-title="security"
+                    href="#security"
+                    class="smoothScroll"
+                    >Information Security & Protection</a
                   >
                 </th>
                 <th>
@@ -116,7 +136,14 @@ http://www.templatemo.com/tm-515-eatery
                   <p><a href="#education" onclick="submenuLeft()">Big Data</a></p>
                   <p><a href="#education" onclick="submenuLeft()">Artificial Intelligence</a></p>
                   <p><a href="#education" onclick="submenuLeft()">LLM</a></p>
+                  <p><a href="#education" onclick="submenuLeft()">Hackathon</a></p>
                   <p><a href="#education" onclick="submenuLeft()">Certifications</a></p>
+                </td>
+                <td>
+                  <p><a href="#security" onclick="submenuLeft()">Network Security Solutions</a></p>
+                  <p><a href="#security" onclick="submenuLeft()">Endpoint Security Solutions</a></p>
+                  <p><a href="#security" onclick="submenuLeft()">Content/Data Security Solutions</a></p>
+                  <p><a href="#security" onclick="submenuLeft()">Common Infrastructure Security Solutions</a></p>
                 </td>
               </tr>
             </tbody>
@@ -536,6 +563,90 @@ http://www.templatemo.com/tm-515-eatery
         </div>
       </div>
     </section>
+    <section id="security" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+              <h2>Information Security & Protection</h2>
+            </div>
+          </div>
+          <div class="scroll_use_case">
+            <div class="scroll_content">
+              <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                <img
+                  src="images/dx_qa.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="team-hover">
+                  <div class="team-item">
+                    <h4>Web Application Firewall (WAF), Firewall (Network Firewall, Unified Threat Management (UTM), Next-Generation Firewall (NGFW)), Intrusion Prevention System (IPS), DDoS Protection, Virtual Private Network (VPN), Network Access Control (NAC), Wireless Network Security, Network Threat Detection and Response, Network Segmentation (One-Way Gateway, etc.), Desktop Virtualization (VDI, DaaS, etc.)</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Network Security Solutions</h3>
+              </div>
+            </div>
+
+            <div class="scroll_content">
+              <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                <img
+                  src="images/dx_mo.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="team-hover">
+                  <div class="team-item">
+                    <h4>Content Disarm and Reconstruction (CDR), Endpoint Detection and Response (EDR), Malware/Ransomware Protection, Advanced Persistent Threat (APT) Protection, Mobile Device Security</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Endpoint Security Solutions</h3>
+              </div>
+            </div>
+
+            <div class="scroll_content">
+              <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                <img
+                  src="images/dx_pm.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="team-hover">
+                  <div class="team-item">
+                    <h4>Network Data Loss Prevention (DLP), Digital Rights Management (DRM), Database Security (Access Control)/Database Encryption, Email Security Solutions, Data De-identification Solutions, Centralized Document Management Solutions, Secure  </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Content/Data Security Solutions</h3>
+              </div>
+            </div>
+
+            <div class="scroll_content">
+              <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                <img
+                  src="images/dx_ro.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="team-hover">
+                  <div class="team-item">
+                    <h4>User Authentication, Integrated Identity Management (IM/IAM), Enterprise Access Management (EAM), Next-Generation Authentication (FIDO, DID, IoT), Security Information and Event Management (SIEM), Log Management and Analysis Systems, Backup and Recovery Management Systems</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h3>Common Infrastructure Security Solutions</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- TESTIMONIAL -->
     <!--
@@ -622,8 +733,7 @@ http://www.templatemo.com/tm-515-eatery
 
             <!-- CONTACT FORM -->
             <form
-              action="#"
-              method="post"
+              onsubmit="sendEmail(event)"
               class="wow fadeInUp"
               id="contact-form"
               role="form"
@@ -703,10 +813,17 @@ http://www.templatemo.com/tm-515-eatery
               </div>
               <address class="wow fadeInUp" data-wow-delay="0.4s">
                 <p>
-                  471 Dongdaegu-ro, Dong-gu, Daegu <br>
-                  대구콘텐츠센터 4층 BrainWorks(주)
+                  BrainWorks, 4th Floor, Daegu Contents Center,<br>
+                  471 Dongdaegu-ro, Dong-gu, Daegu
+                </p>
+                <p>
+                  BrainWorks, Unit A125, 1st Floor, Building 202, 210 Gwangjang-ro,<br>
+                  Baebang-eup, Asan-si, Chungcheongnam-do, South Korea
                 </p>
               </address>
+              <p>
+                main contact mail: austin@brainworks.co.kr
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-8">
@@ -771,5 +888,16 @@ http://www.templatemo.com/tm-515-eatery
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/menu.js"></script>
+    <script>
+      function sendEmail(event) {
+          event.preventDefault(); // 폼 제출을 막음
+          emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target) // EmailJS 등록 후 교체
+          .then(function() {
+              alert('Email sent!');
+          }, function(error) {
+              alert('Failed to send email: ' + JSON.stringify(error));
+          });
+      }
+  </script>
   </body>
 </html>
