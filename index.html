@@ -2,6 +2,12 @@
 <html lang="kr">
   <head>
     <title>브레인웍스</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("YOUR_USER_ID"); // EmailJS에서 발급한 사용자 ID 입력 필요
+      })();
+    </script>
     <!-- 
 
 Eatery Cafe Template 
@@ -47,10 +53,10 @@ http://www.templatemo.com/tm-515-eatery
         </div>
         <!-- MENU LINKS -->
         <div class="navbar-collapse">
-          <th>
+          <div style="text-align: right;">
             <a href="index.html"><b>한국어</b></a> |
             <a href="index_en.html">English</a>
-          </th>
+          </div>
           <table class="nav navbar-nav navbar-nav-first">
             <thead onmouseenter="menuOpen()" onmouseleave="menuClose()">
               <tr>
@@ -66,7 +72,7 @@ http://www.templatemo.com/tm-515-eatery
                     data-title="ai_solution"
                     href="#ai_solution"
                     class="smoothScroll"
-                    >Manufacturing AI</a
+                    >AI & Big Data</a
                   >
                 </th>
                 <th>
@@ -83,6 +89,13 @@ http://www.templatemo.com/tm-515-eatery
                     href="#education"
                     class="smoothScroll"
                     >AI Education</a
+                  >
+                </th>
+                <th>
+                  <a
+                    href="#security"
+                    class="smoothScroll"
+                    >정보 보호 & 보안</a
                   >
                 </th>
                 <th>
@@ -116,6 +129,10 @@ http://www.templatemo.com/tm-515-eatery
                   <p><a href="#education" onclick="submenuLeft()">AI</a></p>
                   <p><a href="#education" onclick="submenuLeft()">LLM</a></p>
                   <p><a href="#education" onclick="submenuLeft()">Certifications</a></p>
+                </td>
+                <td>
+                  <p><a href="#security" onclick="submenuLeft()">정보보호 컨설팅 및 진단</a></p>
+                  <p><a href="#security" onclick="submenuLeft()">보안 솔루션 공급 및 운영</a></p>
                 </td>
               </tr>
             </tbody>
@@ -536,6 +553,105 @@ http://www.templatemo.com/tm-515-eatery
       </div>
     </section>
 
+    <section id="security" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="about-info">
+          <div class="section-title wow" data-wow-delay="0.2s">
+            <h2>정보 보호 및 보안</h2>
+            <ul>
+              <li>중소기업 대상 정보보호 지원을 통한 기업 자체 정보보호 체계 구축 및 전문 컨설팅</li>
+              <li>기업의 정보보호 체계에 대한 진단과 취약점 분석 컨설팅</li>
+            </ul>
+          </div>
+          <div class="section-title wow" data-wow-delay="0.2s">
+            <h2>보안 솔루션 공급 및 운영</h2>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div class="container">
+        <div class="row container_row" id="ai-vibration">
+          <div class="col-md-8 col-sm-12">
+            <div class="about-info">
+              <div class="wow" data-wow-delay="0.4s">
+                <h3>네트워크 보안 솔루션</h3>
+                <p>
+                  웹 방화벽(WAF), 방화벽(네트워크 방화벽, 통합보안시스템(UTM), 차세대 방화벽(NGFW)),<br>
+                  침입방지시스템(IPS), DDoS 대응, 가상사설망(VPN), 네트워크 접근제어(NAC),<br>
+                  무선 네트워크 보안, 네트워크 위협 탐지 및 대응, 망분리(일방향게이트웨이 등), 데스크톱 가상화(VDI, DaaS 등)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <div class="wow about-image" data-wow-delay="0.6s">
+              <img src="images/security_network.jpg" class="img-responsive" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row container_row" id="ai-production">
+          <div class="col-md-4 col-sm-12">
+            <div class="wow about-image" data-wow-delay="0.6s">
+              <img src="images/security_endpoint.jpg" class="img-responsive" alt="" />
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="about-info">
+              <div class="wow" data-wow-delay="0.4s">
+                <h3>엔드포인트 보안 솔루션</h3>
+                <p>컨텐츠 악성코드 무해화 기술(CDR), 앤드포인트 위협 탐지 및 대응(EDR),<br>
+                  악성코드/랜섬웨어 대응, APT 대응, 모바일 단말 보안
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row container_row" id="ai-frost">
+          <div class="col-md-8 col-sm-12">
+            <div class="about-info">
+              <div class="wow" data-wow-delay="0.4s">
+                <h3>컨텐츠/데이터보안 솔루션</h3>
+                <p>
+                  네트워크 DLP, 디지털저작관리(DRM), DB보안(접근통제)/DB암호, 메일 보안 솔루션,<br>
+                  개인정보 비식별화 솔루션, 문서중앙화 솔루션, 완전삭제 솔루션
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="wow about-image" data-wow-delay="0.6s">
+              <img src="images/security_data.jpg" class="img-responsive" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row container_row" id="ai-inspect">
+          <div class="col-md-4 col-sm-12">
+            <div class="wow about-image" data-wow-delay="0.6s">
+              <img src="images/security_infra.jpg" class="img-responsive" alt="" />
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="about-info">
+              <div class="wow" data-wow-delay="0.4s">
+                <h3>공통 인프라 보안 솔루션</h3>
+                <p>사용자 인증, 통합계정관리(IM/IAM), 통합접근관리(EAM), 차세대 인증(FIDO, DID, IoT),<br>
+                  통합보안관제시스템(SIEM), 로그 관리 및 분석시스템, 백업 및 복구관리시스템
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
     <!-- TESTIMONIAL -->
     <!--
     <section id="testimonial" data-stellar-background-ratio="0.5">
@@ -621,22 +737,20 @@ http://www.templatemo.com/tm-515-eatery
 
             <!-- CONTACT FORM -->
             <form
-              action="#"
-              method="post"
+              onsubmit="sendEmail(event)"
               class="wow fadeInUp"
               id="contact-form"
               role="form"
               data-wow-delay="0.8s"
             >
-              <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
+              <!-- IF MArtificial IntelligenceL SENT SUCCESSFUL  // connect this with custom JS -->
               <h6 class="text-success">
-                Your message has been sent successfully.
+                메일이 성공적으로 전송되었습니다.
               </h6>
 
-              <!-- IF MAIL NOT SENT -->
+              <!-- IF MArtificial IntelligenceL NOT SENT -->
               <h6 class="text-danger">
-                E-mail must be valid and message must be longer than 1
-                character.
+                이메일 주소의 길이가 너무 짧습니다
               </h6>
 
               <div class="col-md-6 col-sm-6">
@@ -682,7 +796,7 @@ http://www.templatemo.com/tm-515-eatery
                   id="cf-submit"
                   name="submit"
                 >
-                  Send Message
+                  메일 보내기
                 </button>
               </div>
             </form>
@@ -704,6 +818,10 @@ http://www.templatemo.com/tm-515-eatery
                 <p>
                   대구광역시 동구 동대구로 471 <br>
                   대구콘텐츠센터 4층 브레인웍스(주)
+                </p>
+                <p>
+                  충남 아산시 배방읍 광장로 210,<br>
+                  202동 1층 A125호 브레인웍스(주)
                 </p>
               </address>
             </div>
@@ -770,5 +888,16 @@ http://www.templatemo.com/tm-515-eatery
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/menu.js"></script>
+    <script>
+      function sendEmail(event) {
+          event.preventDefault(); // 폼 제출을 막음
+          emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target) // EmailJS 등록 후 교체
+          .then(function() {
+              alert('Email sent!');
+          }, function(error) {
+              alert('Failed to send email: ' + JSON.stringify(error));
+          });
+      }
+  </script>
   </body>
 </html>
